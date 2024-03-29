@@ -1,0 +1,6 @@
+﻿  main.c
+C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\c_functions\main.c(49,16): warning C4047: 'função': 'Imagem *' difere em níveis de indireção de 'Imagem **'
+C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\c_functions\main.c(49,16): warning C4024: 'applyDilation': tipos diferentes para parâmetro formal e real 1
+C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\c_functions\main.c(49,22): warning C4047: 'função': 'Adjacencia *' difere em níveis de indireção de 'Adjacencia **'
+C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\c_functions\main.c(49,22): warning C4024: 'applyDilation': tipos diferentes para parâmetro formal e real 2
+  c_functions.vcxproj -> C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\x64\Debug\c_functions.exe

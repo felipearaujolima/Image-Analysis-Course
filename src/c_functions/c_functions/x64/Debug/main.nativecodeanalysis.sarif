@@ -1,0 +1,1893 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Desreferenciando ponteiro NULL \"row_pointers\". "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                },
+                "region": {
+                  "startLine": 146,
+                  "startColumn": 3,
+                  "endLine": 146,
+                  "endColumn": 65
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "read_png_image",
+                  "decoratedName": "read_png_image",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 42,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 56,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 62,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 75,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 82,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 94,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 104,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 105,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 117,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 118,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 121,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 122,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 125,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "\"row_pointers\" pode ser NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 145,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 145,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Entrar neste loop, (supor \"y<height\")"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 146,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "\"row_pointers\" não está referenciado, mas ainda pode ser NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Desreferenciando ponteiro NULL \"image_array\". "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                },
+                "region": {
+                  "startLine": 280,
+                  "startColumn": 3,
+                  "endLine": 280,
+                  "endColumn": 47
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "main",
+                  "decoratedName": "main",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 256,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 259,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 260,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 264,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 265,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 266,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 267,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 268,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 269,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 270,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 271,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 274,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 275,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 278,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "\"image_array\" pode ser NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 279,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 279,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Entrar neste loop, (supor \"y<height\")"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 280,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "\"image_array\" não está referenciado, mas ainda pode ser NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Desreferenciando ponteiro NULL \"image_array[y]\". "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                },
+                "region": {
+                  "startLine": 283,
+                  "startColumn": 4,
+                  "endLine": 283,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "main",
+                  "decoratedName": "main",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 256,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 259,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 260,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 264,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 265,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 266,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 267,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 268,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 269,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 270,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 271,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 274,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 275,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 278,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 279,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 279,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 280,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 281,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 281,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 283,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 281,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 281,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 279,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 279,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 280,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "\"<símbolo>\" pode ser NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 281,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 281,
+                            "startColumn": 21
+                          }
+                        },
+                        "message": {
+                          "text": "Entrar neste loop, (supor \"x<width\")"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 283,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "\"<símbolo>\" não está referenciado, mas ainda pode ser NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Desreferenciando ponteiro NULL \"image_array[i_y]\". Consulte a linha 283 para um local anterior onde isto pode ocorrer"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                },
+                "region": {
+                  "startLine": 344,
+                  "startColumn": 11,
+                  "endLine": 344,
+                  "endColumn": 35
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "main",
+                  "decoratedName": "main",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 256,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 259,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 260,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 264,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 265,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 266,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 267,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 268,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 269,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 270,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 271,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 274,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 275,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 278,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 279,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 279,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 280,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 281,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 281,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 283,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 281,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 281,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 279,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 279,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 280,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "\"<símbolo>\" pode ser NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 281,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 281,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 283,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 281,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 281,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 279,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 279,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Sair deste loop, (\"y<height\" é falso)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 287,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 288,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 309,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 310,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 313,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 313,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Entrar neste loop, (supor \"y<height\")"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 315,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 315,
+                            "startColumn": 21
+                          }
+                        },
+                        "message": {
+                          "text": "Entrar neste loop, (supor \"x<width\")"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 332,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 333,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 334,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 335,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 340,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 341,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 341,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "Entrar neste loop, (supor \"i_y<=lim_sup_y\")"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 342,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 342,
+                            "startColumn": 35
+                          }
+                        },
+                        "message": {
+                          "text": "Entrar neste loop, (supor \"i_x<=lim_sup_x\")"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 343,
+                            "startColumn": 47
+                          }
+                        },
+                        "message": {
+                          "text": "Entrar nesta ramificação, (supor \"<condição do ramo>\")"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 344,
+                            "startColumn": 33
+                          }
+                        },
+                        "message": {
+                          "text": "Ignorar esta ramificação, (supor que \"image_array[i_y][i_x]>max\" é falso)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+                          },
+                          "region": {
+                            "startLine": 344,
+                            "startColumn": 33
+                          }
+                        },
+                        "message": {
+                          "text": "\"<símbolo>\" não está referenciado, mas ainda pode ser NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33522.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/felip/Documents/Projetos/Code/Repos/Image-Analysis-Course/src/c_functions/c_functions/main.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "ea1cfbb11208db5db0c983e8a845600316945cdafb44b5403c0970c32d43942f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/felip/documents/projetos/code/repos/image-analysis-course/src/c_functions/c_functions/libpng/include/png.h"
+          },
+          "hashes": {
+            "sha-256": "2b16f4d8283209a40d024cbdd2928e779506c4a1caf1166d32962996067a29b0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/felip/documents/projetos/code/repos/image-analysis-course/src/c_functions/c_functions/libpng/include/pnglibconf.h"
+          },
+          "hashes": {
+            "sha-256": "fd9a9b9e6ed03a63f5eb596eb9ba98771b70d944a3150d2cd265b109f3931314"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/felip/documents/projetos/code/repos/image-analysis-course/src/c_functions/c_functions/libpng/include/pngconf.h"
+          },
+          "hashes": {
+            "sha-256": "0765c713e81082b3951ed7f151ede374a1404d8c7ebd9d466ee8851b6e932155"
+          }
+        }
+      ]
+    }
+  ]
+}
