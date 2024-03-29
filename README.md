@@ -2,7 +2,7 @@
 
 Github repository for the image analysis course given by Alexandre Falcao at Unicamp. 
 Here, you will find: 
-* Fundamentals of Image Processing - important step for image analysis and computer vision.
+* Fundamentals of Image Processing 
 * Image Filtering by connected operators
 * Graph-based image segmentation
 * Introduction to image representation
@@ -16,4 +16,3 @@ Here, you will find:
 
 
 > :construction: Project under development :construction:
-
