@@ -130,19 +130,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="adjacencia_basics.c" />
-    <ClCompile Include="imagem_basics.c" />
-    <ClCompile Include="Fila.c" />
-    <ClCompile Include="imagem.c" />
+    <ClCompile Include="adjacency.c" />
+    <ClCompile Include="image.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="main_backup.c" />
-    <ClCompile Include="tutorial.c" />
+    <ClCompile Include="morphological_op.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="adjacencia_basics.h" />
-    <ClInclude Include="imagem_basics.h" />
-    <ClInclude Include="Fila.h" />
-    <ClInclude Include="imagem.h" />
+    <ClInclude Include="adjacency.h" />
+    <ClInclude Include="image.h" />
+    <ClInclude Include="morphological_op.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|solutionrelative:c_functions\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\imagem_basics.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|solutionrelative:c_functions\\imagem_basics.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\adjacencia_basics.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|solutionrelative:c_functions\\adjacencia_basics.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\morphological_op.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|solutionrelative:c_functions\\morphological_op.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,32 +18,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "adjacencia_basics.c",
-              "DocumentMoniker": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\adjacencia_basics.c",
-              "RelativeDocumentMoniker": "c_functions\\adjacencia_basics.c",
-              "ToolTip": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\adjacencia_basics.c",
-              "RelativeToolTip": "c_functions\\adjacencia_basics.c",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-03-28T23:43:33.013Z"
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "imagem_basics.c",
-              "DocumentMoniker": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\imagem_basics.c",
-              "RelativeDocumentMoniker": "c_functions\\imagem_basics.c",
-              "ToolTip": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\imagem_basics.c",
-              "RelativeToolTip": "c_functions\\imagem_basics.c",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAHwAAAAuAAAA",
+              "Title": "morphological_op.c",
+              "DocumentMoniker": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\morphological_op.c",
+              "RelativeDocumentMoniker": "c_functions\\morphological_op.c",
+              "ToolTip": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\morphological_op.c",
+              "RelativeToolTip": "c_functions\\morphological_op.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAOEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-03-28T23:22:41.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-30T18:42:40.842Z"
             },
             {
               "$type": "Document",
@@ -57,9 +48,9 @@
               "RelativeDocumentMoniker": "c_functions\\main.c",
               "ToolTip": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\main.c",
               "RelativeToolTip": "c_functions\\main.c",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACAAAAAeAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-03-24T19:07:22.935Z",
+              "WhenOpened": "2024-03-29T15:57:07.371Z",
               "EditorCaption": ""
             }
           ]
