@@ -25,7 +25,7 @@ void* DestroyImage(Image** img)
     //}
 }
 
-Image* ReadImage(char* name_img)
+Image* ReadImage(char* name_img, char* type_img)
 {
 
     // Image* img = NULL;
@@ -68,6 +68,10 @@ Image* ReadImage(char* name_img)
     //if (color_type == PNG_COLOR_TYPE_GRAY ||
     //    color_type == PNG_COLOR_TYPE_GRAY_ALPHA)
     //    png_set_gray_to_rgb(png);
+
+    if (type_img == "gray") {
+        png_set_rgb_to_gray(png, 1, -1, -1);
+    }
     
     png_read_update_info(png, info);
 

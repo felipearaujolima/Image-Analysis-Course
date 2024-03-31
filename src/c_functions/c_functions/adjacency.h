@@ -11,6 +11,6 @@ typedef struct _adjacency { /* criando uma estrutura do tipo Adjacencia */
 Adjacency* CreateAdjacency(int nadj);
 void        DestroyAdjacency(Adjacency** adj);
 Adjacency* Rectangular(int w, int h);
-Adjacency* Circular(float disk); // for circular adjacency, we take q so that q is sqrt((xq - xp)**2 + (yq - yp)**2) <= disk
+Adjacency* Circular(int null, int disk);
 
 #endif

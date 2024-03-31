@@ -2,11 +2,10 @@
 #include "adjacency.h"
 #include <stdio.h> 
 
-
 void applyDilation(Image* img, Adjacency* adj, char* name_img)
 {
     // Cria uma cópia da imagem original
-    Image* aux = ReadImage(name_img);
+    Image* aux = ReadImage(name_img, "standard");
 
     for (int y = 0; y < img->ny; y++) {
         for (int x = 0; x < img->nx; x++) {
@@ -148,7 +147,7 @@ void applyDilation(Image* img, Adjacency* adj, char* name_img)
 void applyErosion(Image* img, Adjacency* adj, char* name_img)
 {
     // Cria uma cópia da imagem original
-    Image* aux = ReadImage(name_img);
+    Image* aux = ReadImage(name_img, "standard");
 
     for (int y = 0; y < img->ny; y++) {
         for (int x = 0; x < img->nx; x++) {
@@ -504,17 +503,188 @@ void applySubtraction(Image* img_1, Image* img_2, Image* out)
     }
 }
 
+int applyFindMin(Image* img) 
+{
+    int minimum = 255;
+    if (img->color_type == PNG_COLOR_TYPE_GRAY) {
+        for (int y = 0; y < img->ny; y++) {
+            for (int x = 0; x < img->nx; x++) {
+                png_bytep pixel = &(img->row_pointers[y][x]);
+
+                if (*pixel < minimum) {
+                    minimum = *pixel;
+                }
+
+            }
+        }
+    }
+    else if (img->color_type == PNG_COLOR_TYPE_RGB) {
+        return -1;
+        //for (int y = 0; y < img->ny; y++) {
+        //    for (int x = 0; x < img->nx; x++) {
+        //        png_bytep red = &(img->row_pointers[y][3 * x]);
+        //        png_bytep green = &(img->row_pointers[y][3 * x + 1]);
+        //        png_bytep blue = &(img->row_pointers[y][3 * x + 2]);
+        //
+        //        int pixel;
+        //
+        //        if (*red < *green) {
+        //            if (*red < *blue) {
+        //                pixel = *red;
+        //            }
+        //            else {
+        //                pixel = *blue;
+        //            }
+        //        }
+        //        else {
+        //            if (*green < *blue) {
+        //                pixel = *green;
+        //            }
+        //            else {
+        //                pixel = *blue;
+        //            }
+        //        }
+        //
+        //        if (pixel < minimum) {
+        //            minimum = pixel;
+        //        }
+        //    }
+        //}
+
+    }
+
+    return minimum;
+
+}
+
+int applyFindMax(Image* img)
+{
+    int max = 0;
+    if (img->color_type == PNG_COLOR_TYPE_GRAY) {
+        for (int y = 0; y < img->ny; y++) {
+            for (int x = 0; x < img->nx; x++) {
+                png_bytep pixel = &(img->row_pointers[y][x]);
+
+                if (*pixel > max) {
+                    max = *pixel;
+                }
+
+            }
+        }
+    }
+    else if (img->color_type == PNG_COLOR_TYPE_RGB) {
+        return -1;
+        //for (int y = 0; y < img->ny; y++) {
+        //    for (int x = 0; x < img->nx; x++) {
+        //        png_bytep red = &(img->row_pointers[y][3 * x]);
+        //        png_bytep green = &(img->row_pointers[y][3 * x + 1]);
+        //        png_bytep blue = &(img->row_pointers[y][3 * x + 2]);
+        //
+        //        int pixel;
+        //
+        //        if (*red > *green) {
+        //            if (*red > *blue) {
+        //                pixel = *red;
+        //            }
+        //            else {
+        //                pixel = *blue;
+        //            }
+        //        }
+        //        else {
+        //            if (*green > *blue) {
+        //                pixel = *green;
+        //            }
+        //            else {
+        //                pixel = *blue;
+        //            }
+        //        }
+        //
+        //        if (pixel > max) {
+        //            max = pixel;
+        //        }
+        //    }
+        //
+        //
+        //}
+
+    }
+
+    return max;
+
+}
+
+void applyCalculateHistogram(Image* img, int* histogram) {
+    for (int y = 0; y < img->ny; y++) {
+        for (int x = 0; x < img->nx; x++) {
+            png_bytep pixel = &(img->row_pointers[y][x]);
+            histogram[*pixel]++;
+        }
+    }
+}
+
+void applyCalculateCDF(int* histogram, int* cdf, int N) {
+    cdf[0] = histogram[0];
+    for (int i = 1; i < 256; i++) {
+        cdf[i] = cdf[i - 1] + histogram[i];
+    }
+    for (int i = 0; i < 256; i++) {
+        cdf[i] = ((float)cdf[i] / N) * 255;
+    }
+}
+
+void applyLinearStreching(Image* img)
+{
+    if (img->color_type == PNG_COLOR_TYPE_GRAY) {
+        int N = img->nx * img->ny;
+        int* histogram = (int*)calloc(256, sizeof(int));
+        int* cdf = (int*)calloc(256, sizeof(int));
+
+        applyCalculateHistogram(img, histogram);
+        applyCalculateCDF(histogram, cdf, N);
+
+        for (int y = 0; y < img->ny; y++) {
+            for (int x = 0; x < img->nx; x++) {
+                png_bytep pixel = &(img->row_pointers[y][x]);
+                *pixel = cdf[*pixel];
+            }
+        }
+
+        free(histogram);
+        free(cdf);
+    }
+    else if (img->color_type == PNG_COLOR_TYPE_RGB) {
+        return -1;
+    }
+}
+
+void applyAbs(Image* img) 
+{
+    
+    if (img->color_type == PNG_COLOR_TYPE_GRAY) {
+        for (int y = 0; y < img->ny; y++) {
+            for (int x = 0; x < img->nx; x++) {
+                png_bytep pixel = &(img->row_pointers[y][x]);
+
+            }
+        }
+    }
+    else if (img->color_type == PNG_COLOR_TYPE_RGB) {
+        return -1;
+    }
+
+}
+
 Image* applyMorphologicalGradients(char* name_img, Adjacency* adj, char* type)
 {
-    Image* out = ReadImage(name_img);
+    Image* out = ReadImage(name_img, "standard");
     
     if (type = "dil_ero") {
         // erosion - dilation 
-        Image* img_1 = ReadImage(name_img);
-        Image* img_2 = ReadImage(name_img);
+        Image* img_1 = ReadImage(name_img, "standard");
+        Image* img_2 = ReadImage(name_img, "standard");
 
-        applyErosion(img_1, adj, name_img);
-        applyDilation(img_2, adj, name_img);
+        applyErosion(img_1, adj, name_img, "standard");
+        applyDilation(img_2, adj, name_img, "standard");
         applySubtraction(img_2, img_1, out);
         
         
@@ -534,8 +704,8 @@ Image* applyMorphologicalGradients(char* name_img, Adjacency* adj, char* type)
     }
     else if (type = "img_ero") {
         // erosion - image
-        Image* img_1 = ReadImage(name_img);
-        Image* img_2 = ReadImage(name_img);
+        Image* img_1 = ReadImage(name_img, "standard");
+        Image* img_2 = ReadImage(name_img, "standard");
         applyErosion(img_1, adj, name_img);
         applySubtraction(img_1, img_2, out);
 
@@ -553,8 +723,8 @@ Image* applyMorphologicalGradients(char* name_img, Adjacency* adj, char* type)
     }
     else if (type = "dil_img"){
         // image - dilation
-        Image* img_1 = ReadImage(name_img);
-        Image* img_2 = ReadImage(name_img);
+        Image* img_1 = ReadImage(name_img, "standard");
+        Image* img_2 = ReadImage(name_img, "standard");
         applyDilation(img_2, adj, name_img);
         applySubtraction(img_1, img_2, out);
 

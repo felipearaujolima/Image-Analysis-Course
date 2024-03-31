@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|solutionrelative:c_functions\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\morphological_op.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|solutionrelative:c_functions\\morphological_op.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\morphological_op.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|solutionrelative:c_functions\\morphological_op.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,13 +34,39 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "morphological_op.h",
+              "DocumentMoniker": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\morphological_op.h",
+              "RelativeDocumentMoniker": "c_functions\\morphological_op.h",
+              "ToolTip": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\morphological_op.h",
+              "RelativeToolTip": "c_functions\\morphological_op.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-31T20:40:44.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "morphological_op.c",
+              "DocumentMoniker": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\morphological_op.c",
+              "RelativeDocumentMoniker": "c_functions\\morphological_op.c",
+              "ToolTip": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\morphological_op.c",
+              "RelativeToolTip": "c_functions\\morphological_op.c",
+              "ViewState": "AQIAAMkCAAAAAAAAAAAcwNMCAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-03-31T20:39:01.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.c",
               "DocumentMoniker": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\main.c",
               "RelativeDocumentMoniker": "c_functions\\main.c",
               "ToolTip": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\main.c",
               "RelativeToolTip": "c_functions\\main.c",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAEwAAAAFAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAcwBgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-03-29T15:57:07.371Z",
               "EditorCaption": ""

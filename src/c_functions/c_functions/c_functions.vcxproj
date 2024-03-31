@@ -131,6 +131,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="adjacency.c" />
+    <ClCompile Include="convolution.c" />
     <ClCompile Include="image.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="main_backup.c" />
@@ -138,6 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="adjacency.h" />
+    <ClInclude Include="convolution.h" />
     <ClInclude Include="image.h" />
     <ClInclude Include="morphological_op.h" />
   </ItemGroup>

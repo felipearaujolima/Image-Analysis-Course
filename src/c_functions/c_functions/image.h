@@ -14,7 +14,7 @@ typedef struct _image {
 
 
 void* DestroyImage(Image** img);
-Image* ReadImage(char* name_img);
+Image* ReadImage(char* name_img, char* type_img);
 void WriteImage(Image* img, char* name_img);
 
 
