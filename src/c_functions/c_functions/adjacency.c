@@ -44,3 +44,23 @@ Adjacency* Rectangular(int w, int h) /* aqui criamos a adjacencia retangular */
 
     return(adj);
 }
+
+Adjacency* Circular(int null, int disk)
+{
+    Adjacency* adj = NULL;
+       
+    int nadj = (2 * disk) + 1;
+    nadj = nadj * nadj;
+
+    adj = CreateAdjacency(nadj);
+    int i = 0;
+    for (int dy = - disk; dy <= disk; dy++) { 
+        for (int dx = -disk; dx <= disk; dx++) { 
+            adj->dx[i] = dx; 
+            adj->dy[i] = dy; 
+            i++;
+        }
+    }
+    
+    return(adj);
+}

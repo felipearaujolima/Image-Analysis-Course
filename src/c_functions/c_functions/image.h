@@ -12,8 +12,7 @@ typedef struct _image {
 	
 } Image;
 
-png_bytepp ConvertToRowPointers(Image* img);
-Image* CreateImage(png_structp png, png_infop info);
+
 void* DestroyImage(Image** img);
 Image* ReadImage(char* name_img);
 void WriteImage(Image* img, char* name_img);

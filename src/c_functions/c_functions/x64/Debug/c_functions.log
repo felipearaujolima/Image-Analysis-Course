@@ -1,4 +1,6 @@
 ﻿  main.c
-C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\c_functions\main.c(25,15): warning C4047: 'função': 'Image **' difere em níveis de indireção de 'Image *'
-C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\c_functions\main.c(25,15): warning C4024: 'DestroyImage': tipos diferentes para parâmetro formal e real 1
+C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\c_functions\main.c(71,39): warning C4020: 'Circular': muitos parâmetros reais
+C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\c_functions\main.c(77,39): warning C4020: 'Circular': muitos parâmetros reais
+C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\c_functions\main.c(81,15): warning C4047: 'função': 'Image **' difere em níveis de indireção de 'Image *'
+C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\c_functions\main.c(81,15): warning C4024: 'DestroyImage': tipos diferentes para parâmetro formal e real 1
   c_functions.vcxproj -> C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\x64\Debug\c_functions.exe
