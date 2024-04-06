@@ -1,4 +1,10 @@
-﻿  convolution.c
-C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\c_functions\convolution.c(110,15): warning C4047: 'função': 'Image **' difere em níveis de indireção de 'Image *'
-C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\c_functions\convolution.c(110,15): warning C4024: 'DestroyImage': tipos diferentes para parâmetro formal e real 1
+﻿  common.c
+  main.c
+C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\c_functions\common.c(35,30): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
+C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\c_functions\common.c(36,31): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
+C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\c_functions\common.c(64,20): warning C4244: '=': conversão de 'double' para 'int', possível perda de dados
+C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\c_functions\common.c(65,20): warning C4244: '=': conversão de 'double' para 'int', possível perda de dados
+C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\c_functions\common.c(82,20): warning C4244: '=': conversão de 'double' para 'int', possível perda de dados
+C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\c_functions\common.c(83,20): warning C4244: '=': conversão de 'double' para 'int', possível perda de dados
+  Gerando Código...
   c_functions.vcxproj -> C:\Users\felip\Documents\Projetos\Code\Repos\Image-Analysis-Course\src\c_functions\x64\Debug\c_functions.exe
