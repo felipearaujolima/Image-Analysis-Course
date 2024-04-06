@@ -5,6 +5,35 @@
 double applyLog(double val, double base) {
     return (log(val) / log(base));
 }
+IntArray* CreateIntArray(long n) {
+    IntArray* iarr = (IntArray*)applyAlloc(1, sizeof(IntArray));
+
+    iarr->n = n;
+    iarr->val = applyAllocIntArray(n);
+
+    return iarr;
+}
+IntArray* IntRange(int begin, int end, int inc) {
+    int n = ((end - begin) / inc) + 1;
+
+    IntArray* space = CreateIntArray(n);
+
+    for (int i = 0; i < n; ++i) {
+        space->val[i] = begin + (inc * i);
+    }
+
+    return space;
+}
+void DestroyIntArray(IntArray **iarr) {
+    if (iarr != NULL && *iarr != NULL) {
+        IntArray *iarr_aux = *iarr;
+        
+        if (iarr_aux->val != NULL)
+            applyFree(iarr_aux->val);
+        applyFree(iarr_aux);
+        *iarr = NULL;
+    }
+}
 
 /* Memory functions */
 void applyFree(void* data) {
@@ -19,6 +48,11 @@ int* applyAllocIntArray(long n) {
     int* v = NULL;
 
     v = (int*)applyAlloc(n, sizeof(int));
+    return(v);
+}
+float* applyAllocFloatArray(long n) {
+    float* v = NULL;
+    v = (float*)applyAlloc(n, sizeof(float));
     return(v);
 }
 ushort* applyAllocUShortArray(long n) {

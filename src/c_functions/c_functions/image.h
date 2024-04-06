@@ -1,3 +1,7 @@
+#ifndef _IMAGE_H_
+#define _IMAGE_H_
+
+
 #include "common.h"
 
 
@@ -50,3 +54,5 @@ Image* ReadImage(char* file_name);
 void DestroyImage(Image** img);
 void WritePngImageAux(const char* file_name, png_bytep* row_pointers, int width, int height, int bit_depth, int color_type);
 void WriteImagePNG(Image* img, const char* file_name);
+
+#endif

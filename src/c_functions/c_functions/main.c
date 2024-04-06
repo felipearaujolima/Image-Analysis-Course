@@ -4,6 +4,7 @@
 
 
 #include "image.h"
+#include "adjacency.h"
 
 int main()
 {
@@ -12,7 +13,7 @@ int main()
 
 
 	Image* img = ReadImage(input_file);
-
+	AdjRel* adj_circular = iftCircular(3.0);
 
 	WriteImagePNG(img, output_file);
 	DestroyImage(&img);

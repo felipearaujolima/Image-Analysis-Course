@@ -42,7 +42,7 @@ uchar applyImageDepth(Image* img) {
         max_range = applyNormalizationValue(img_max) + 1;
     else
         max_range = applyNormalizationValue(img_max - img_min) + 1;
-    printf("%d \n", max_range);
+    //printf("%d \n", max_range);
     
     return (uchar)applyLog(max_range, 2);
 }

@@ -5,22 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|solutionrelative:c_functions\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\common.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|solutionrelative:c_functions\\common.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\common.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|solutionrelative:c_functions\\common.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\Image.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|solutionrelative:c_functions\\Image.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\Image.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|solutionrelative:c_functions\\Image.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,67 +26,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "common.c",
-              "DocumentMoniker": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\common.c",
-              "RelativeDocumentMoniker": "c_functions\\common.c",
-              "ToolTip": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\common.c",
-              "RelativeToolTip": "c_functions\\common.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-04-06T15:42:45.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "common.h",
-              "DocumentMoniker": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\common.h",
-              "RelativeDocumentMoniker": "c_functions\\common.h",
-              "ToolTip": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\common.h",
-              "RelativeToolTip": "c_functions\\common.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-06T15:41:49.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "image.h",
-              "DocumentMoniker": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\image.h",
-              "RelativeDocumentMoniker": "c_functions\\image.h",
-              "ToolTip": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\image.h",
-              "RelativeToolTip": "c_functions\\image.h",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB8AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-06T13:53:47.154Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "image.c",
-              "DocumentMoniker": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\image.c",
-              "RelativeDocumentMoniker": "c_functions\\image.c",
-              "ToolTip": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\image.c",
-              "RelativeToolTip": "c_functions\\image.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-04-06T13:53:56.934Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.c",
               "DocumentMoniker": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\main.c",
               "RelativeDocumentMoniker": "c_functions\\main.c",
               "ToolTip": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\main.c",
               "RelativeToolTip": "c_functions\\main.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-04-06T13:53:20.848Z",
+              "WhenOpened": "2024-04-06T19:56:17.568Z",
               "EditorCaption": ""
             }
           ]
