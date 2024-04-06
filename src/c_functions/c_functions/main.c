@@ -17,8 +17,8 @@ int main()
 	char* name_img = "square.png";
 	
 	Image* img = ReadImage(name_img, "standard");
-	//int filter[] = {-1, 0, 1, -2, 0, 2, -1, 0, 1};
-	int filter[] = {-1, -2, -1, 0, 0, 0, 1, 2, 1};
+	int filter[] = {-1, 0, 1, -2, 0, 2, -1, 0, 1};
+	//int filter[] = {-1, -2, -1, 0, 0, 0, 1, 2, 1};
 
 	Kernel* kernel = CreateKernel(3, filter);
 	Image* out = applySimpleKernel(img, kernel, name_img);

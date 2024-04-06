@@ -642,6 +642,7 @@ void applyLinearStreching(Image* img)
         applyCalculateHistogram(img, histogram);
         applyCalculateCDF(histogram, cdf, N);
 
+
         for (int y = 0; y < img->ny; y++) {
             for (int x = 0; x < img->nx; x++) {
                 png_bytep pixel = &(img->row_pointers[y][x]);
