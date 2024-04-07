@@ -3,7 +3,9 @@
 
 
 #include "common.h"
-
+#define applyGetVoxelIndex(s, v) ((v.x)+(s)->tby[(v.y)]+(s)->tbz[(v.z)])
+#define isValidVoxel(img, v)((v.x >= 0) && (v.x <= ((img)->xsize - 1)) && (v.y >= 0) && (v.y <= ((img)->ysize - 1)) && (v.z >= 0) && (v.z <= ((img)->zsize - 1)))
+#define CopyVoxelSize(src, dst) (dst)->dx = (src)->dx; (dst)->dy = (src)->dy; (dst)->dz = (src)->dz;
 
 typedef struct image {
     /** Brightness pixels array. */
@@ -43,6 +45,10 @@ uchar applyImageDepth(Image* img);
 bool applyIsColorImage(Image* img);
 void  applySetCbCr(Image* img, ushort value);
 void  applySetAlpha(Image* img, ushort value);
+
+/* For image working */
+Voxel applyGetVoxelCoord(Image* img, int p);
+void CopyCbCr(Image* src, Image* dst);
 
 /* Create/Read image functions */
 Image* CreateImage(int xsize, int ysize, int zsize);

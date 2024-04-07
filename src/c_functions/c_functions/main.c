@@ -5,18 +5,24 @@
 
 #include "image.h"
 #include "adjacency.h"
+#include "morph.h"
 
 int main()
 {
-	char* input_file = "dog.png";
+	char* input_file = "iris.png";
 	char* output_file = "out.png";
 
 
 	Image* img = ReadImage(input_file);
-	AdjRel* adj_circular = iftCircular(3.0);
+	//AdjRel* adj= adjCircular(3.0);
+	AdjRel* adj= adjRectangular(3, 3);
+	//Image* dil = applyDilate(img, adj);
+	Image* ero = applyErode(img, adj);
 
-	WriteImagePNG(img, output_file);
+	WriteImagePNG(ero, output_file);
 	DestroyImage(&img);
+	DestroyImage(&ero);
+
 
 	printf("Done. \n");
 	return 0;

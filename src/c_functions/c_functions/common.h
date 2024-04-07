@@ -23,6 +23,10 @@
 typedef unsigned short ushort;
 typedef unsigned char  uchar;
 
+typedef struct voxel {
+    int x, y, z, t;
+} Voxel;
+
 typedef struct int_array { 
     long n;
     int* val;

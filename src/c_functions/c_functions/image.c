@@ -74,6 +74,36 @@ void applySetAlpha(Image* img, ushort value)
     }
 }
 
+/* For image working */
+Voxel applyGetVoxelCoord(Image* img, int p)
+{
+
+    Voxel u;
+    div_t res1 = div(p, img->xsize * img->ysize);
+    div_t res2 = div(res1.rem, img->xsize);
+    u.x = res2.rem;
+    u.y = res2.quot;
+    u.z = res1.quot;
+    u.t = 0;
+
+    return u;
+}
+
+void CopyCbCr(Image* src, Image* dst) {
+    if (applyIsColorImage(src)) {
+
+        if (dst->Cb == NULL) {
+            dst->Cb = applyAllocUShortArray(dst->n);
+            dst->Cr = applyAllocUShortArray(dst->n);
+        }
+
+        for (int p = 0; p < dst->n; p++) {
+            dst->Cb[p] = src->Cb[p];
+            dst->Cr[p] = src->Cr[p];
+        }
+    }
+}
+
 /* Create/Read image functions */
 Image* CreateImage(int xsize, int ysize, int zsize) {
     int* val = applyAllocIntArray(xsize * ysize * zsize);

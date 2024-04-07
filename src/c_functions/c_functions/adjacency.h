@@ -17,9 +17,15 @@ typedef struct fastadjrel {
     int bx, by, bz; /* sizes of the image's border to be disconsidered */
 } FastAdjRel;
 
+/* For stuff */
+Voxel applyGetAdjacentVoxel(AdjRel* A, Voxel u, int adj);
+
+/* For creating and destroing adj */
 AdjRel* CreateAdjRel(int n);
 void DestroyAdjRel(AdjRel** A);
-AdjRel* iftRectangular(int xsize, int ysize);
-AdjRel* iftCircular(float r);
+
+/* Creating rectangular and circular adj's */
+AdjRel* adjRectangular(int xsize, int ysize);
+AdjRel* adjCircular(float r);
 
 #endif

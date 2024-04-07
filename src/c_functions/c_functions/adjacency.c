@@ -1,5 +1,17 @@
 #include "adjacency.h"
 
+Voxel applyGetAdjacentVoxel(AdjRel* A, Voxel u, int adj)
+{
+    Voxel v;
+
+    v.x = u.x + A->dx[adj];
+    v.y = u.y + A->dy[adj];
+    v.z = u.z + A->dz[adj];
+    v.t = u.t + A->dt[adj];
+
+    return(v);
+}
+
 AdjRel* CreateAdjRel(int n) /*! \brief Allocates memory for a
 					  3D adjacency relation */
 {
@@ -29,7 +41,7 @@ void DestroyAdjRel(AdjRel** A) /*! \brief Deallocates memory for a
 	}
 }
 
-AdjRel* iftRectangular(int xsize, int ysize)
+AdjRel* adjRectangular(int xsize, int ysize)
 {
 	AdjRel* A;
 	int i, dx, dy, n, i0 = 0;
@@ -66,7 +78,7 @@ AdjRel* iftRectangular(int xsize, int ysize)
 	return(A);
 }
 
-AdjRel* iftCircular(float r) {
+AdjRel* adjCircular(float r) {
     int r0 = (int)r;
     float r2 = (int)(r * r + 0.5);
 

@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|solutionrelative:c_functions\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\morph.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|solutionrelative:c_functions\\morph.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\morph.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{688897E2-6079-4B63-8B68-906A16FE72B5}|c_functions\\c_functions.vcxproj|solutionrelative:c_functions\\morph.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,13 +34,39 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "morph.c",
+              "DocumentMoniker": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\morph.c",
+              "RelativeDocumentMoniker": "c_functions\\morph.c",
+              "ToolTip": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\morph.c",
+              "RelativeToolTip": "c_functions\\morph.c",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAADIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-04-07T16:46:30.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "morph.h",
+              "DocumentMoniker": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\morph.h",
+              "RelativeDocumentMoniker": "c_functions\\morph.h",
+              "ToolTip": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\morph.h",
+              "RelativeToolTip": "c_functions\\morph.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-07T16:45:59.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.c",
               "DocumentMoniker": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\main.c",
               "RelativeDocumentMoniker": "c_functions\\main.c",
               "ToolTip": "C:\\Users\\felip\\Documents\\Projetos\\Code\\Repos\\Image-Analysis-Course\\src\\c_functions\\c_functions\\main.c",
               "RelativeToolTip": "c_functions\\main.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-04-06T19:56:17.568Z",
               "EditorCaption": ""
