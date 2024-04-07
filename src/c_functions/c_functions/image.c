@@ -75,6 +75,10 @@ void applySetAlpha(Image* img, ushort value)
 }
 
 /* For image working */
+long MaxImageRange(uchar img_depth) {
+    return (1L << (img_depth)) - 1; // 2^img_depth -1
+}
+
 Voxel applyGetVoxelCoord(Image* img, int p)
 {
 
@@ -102,6 +106,32 @@ void CopyCbCr(Image* src, Image* dst) {
             dst->Cr[p] = src->Cr[p];
         }
     }
+}
+
+Image* CreateColorImage(int xsize, int ysize, int zsize, int depth)
+{
+    Image* img = NULL;
+    img = CreateImage(xsize, ysize, zsize);
+
+    applySetCbCr(img, (MaxImageRange(depth) + 1) / 2);
+
+    return(img);
+}
+
+Image* CreateImageFromImage(Image* src) {
+    Image* out = NULL;
+
+    if (src != NULL) {
+        if (applyIsColorImage(src)) {
+            out = CreateColorImage(src->xsize, src->ysize, src->zsize, applyImageDepth(src));
+        }
+        else {
+            out = CreateImage(src->xsize, src->ysize, src->zsize);
+        }
+        CopyVoxelSize(src, out);
+    }
+
+    return out;
 }
 
 /* Create/Read image functions */

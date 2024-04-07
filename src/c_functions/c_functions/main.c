@@ -12,16 +12,33 @@ int main()
 	char* input_file = "iris.png";
 	char* output_file = "out.png";
 
-
 	Image* img = ReadImage(input_file);
-	//AdjRel* adj= adjCircular(3.0);
-	AdjRel* adj= adjRectangular(3, 3);
-	//Image* dil = applyDilate(img, adj);
-	Image* ero = applyErode(img, adj);
+	
+	
+	//AdjRel* adj= adjRectangular(3, 3);
 
-	WriteImagePNG(ero, output_file);
+	//Image* dil = applyDilate(img, adj);
+	//Image* ero = applyErode(img, adj);
+	Image* thr = applyThreshold(img, 0, 20, 255);
 	DestroyImage(&img);
-	DestroyImage(&ero);
+
+
+	AdjRel* adj = adjCircular(15.0);
+	Image* close = applyClose(thr,adj);
+	DestroyImage(&thr);
+	DestroyAdjRel(&adj);
+
+	AdjRel* adj_ = adjCircular(30.0);
+	Image* open = applyOpen(close, adj_);
+	DestroyAdjRel(&adj_);
+	DestroyImage(&close);
+
+
+	WriteImagePNG(open, output_file);
+	DestroyImage(&open);
+	
+	//DestroyImage(&dil);
+	//DestroyImage(&sub);
 
 
 	printf("Done. \n");

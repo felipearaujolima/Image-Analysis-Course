@@ -47,8 +47,11 @@ void  applySetCbCr(Image* img, ushort value);
 void  applySetAlpha(Image* img, ushort value);
 
 /* For image working */
+long MaxImageRange(uchar img_depth);
 Voxel applyGetVoxelCoord(Image* img, int p);
 void CopyCbCr(Image* src, Image* dst);
+Image* CreateColorImage(int xsize, int ysize, int zsize, int depth);
+Image* CreateImageFromImage(Image* src);
 
 /* Create/Read image functions */
 Image* CreateImage(int xsize, int ysize, int zsize);
