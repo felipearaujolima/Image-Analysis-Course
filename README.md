@@ -17,10 +17,8 @@ Everything that is presented here was taught to me by professor Alexandre Falcao
 
 ### Structure 
 
-- `pasta1/`: Descrição do conteúdo da pasta1
-  - `subpasta1/`: Descrição do conteúdo da subpasta1 dentro da pasta1
-  - `subpasta2/`: Descrição do conteúdo da subpasta2 dentro da pasta1
-- `pasta2/`: Descrição do conteúdo da pasta2
-  - `subpasta1/`: Descrição do conteúdo da subpasta1 dentro da pasta2
-  - `subpasta2/`: Descrição do conteúdo da subpasta2 dentro da pasta2
+- `images/`: It's where the input images used in tests are kept.
+- `src/`: The main file of this repository.
+  - `c_functions/`: It's where the C functions and explanations of it is kept
+  - `theory/`: Here you will find the theory behind image analysis and the results of doing so in the input images.
 
