@@ -16,10 +16,10 @@ In this file you will find every function that i used to test the theory behind 
 # Common
 These funcions are common to all library, mainly used as a aux for the others, or to myself. 
 
-## applylog
+### applylog
 This one is pretty straightforward, is a mathamatical way of doing a log of a number, given certain base, using natural log. This one will come in hand when we work with bit depth.
 
-## CreateIntArray
+### CreateIntArray
 
 # Image
 
