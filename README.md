@@ -1,4 +1,4 @@
-<h1 align="center"> Image Analysis Course </h1>  
+<h1 align="center"> Image Analysis Course
 
 <p >
    <img src="https://img.shields.io/badge/Status-Doing-blue" #vitrinedev/>
@@ -6,6 +6,10 @@
    <img src="https://img.shields.io/badge/Author-Felipe%20Araujo-green" #vitrinedev/>
    
 </p>
+
+</h1>  
+
+
 
 
 The main goal of this repo is to create a easy way to understand the core concepts of image analysis. Here, you will find the theory behind it all plus the hands on of it. Keep in mind that will be errors and some small mistakes here and there, however, i will do my best to keep then as minimal as possible.   
