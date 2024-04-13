@@ -10,16 +10,7 @@
 
 </h1>  
 
-## Descrição do projeto 
-
-<p align="justify">
- Projeto em desenvolvimento para disciplina Instrumentação Biomédica II do curso de Engenharia Biomédica. O GlicoCare é um sistema de telemonitoramento domiciliar para a atenção especializada de pessoas acometidas por diabetes mellitus.
-
-O sistema permitirá o monitoramento diário, contínuo e remoto do nível de glicose no sangue (glicemia), possibilitando que familiares, cuidadores, profissionais da saúde ou o próprio paciente acompanhem o estado clínico do mesmo.
-
-![Descrição do projeto GlicoCare, onde se tem um paciente medindo glicose com um glicosímetro, conectado via Bluetooth ao aplicativo que o profissional da saúde tem acesso.](https://user-images.githubusercontent.com/37356058/132422764-5a4e5300-7b04-4411-9126-387a445bc627.png)
-</p>
-
+### Description 
 
 The main goal of this repo is to create a easy way to understand the core concepts of image analysis. Here, you will find the theory behind it all plus the hands on of it. Keep in mind that will be errors and some small mistakes here and there, however, i will do my best to keep then as minimal as possible.   
 Everything that is presented here was taught to me by professor Alexandre Falcao, in Unicamp - Brazil. The link to his homepage will be on the end of this readme.  
