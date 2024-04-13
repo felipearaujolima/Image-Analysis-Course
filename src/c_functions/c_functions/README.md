@@ -34,6 +34,31 @@ Creates a struct of type IntArray.
 ### *(function)* IntRange
 This function creates an array of integers within a specified range and incremente. E.g. IntArray(0, 10, 2) -> [0, 2, 4, 6, 8, 10]
 
+### *(function)* DestroyIntArray
+Destroy a struct of type IntArray
+
+### *(function)* applyFree
+It's just free(pointer) guys... with the spice of working with NULL pointers as well. 
+
+### *(function)* applyAlloc
+It's just a calloc of n, and size size. So, we alloc memory for an array of n elements, each of size size bytes (all initialized as zero).
+
+### *(function)* applyAllocIntArray
+Using applyAlloc in a way that my n elements has size int
+
+### *(function)* applyAllocFloatArray
+Using applyAlloc in a way that my n elements has size float
+
+### *(function)* applyAllocUShortArray
+Using applyAlloc in a way that my n elements has size ushort
+
+### *(function)* applyRGBtoYCbCr
+
+### *(function)* applyRGBtoYCbCrBT2020
+
+### *(function)* applyYCbCrBT2020toRGB
+
+
 
 
 # Image
