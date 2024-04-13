@@ -13,12 +13,12 @@ In this file you will find every function that i used to build and test the theo
 
 - [Kernel's functions](#Kernel)
 
-- ### Common
+### Common
 
-- ### Image
+### Image
 
-- ### Adjacency
+### Adjacency
 
-- ### MathMorph
+### MathMorph
 
-- ### Kernel
+### Kernel
