@@ -83,6 +83,15 @@ This structure is the key to all of what we are doing, it's where the image is g
 * dx, dy, dz -> the size of each voxel along the x, y and z dimensions.
 * tby, tbz -> This two are used to speed up voxel access by storing pre-calculated values for the y and z parts of the 3D to 1D index conversion formula.
 
+### *(define)* applyGetVoxelIndex
+It's used to calculate the 1D index of the voxel in the 3D array.
+
+### *(define)* isValidVoxel
+Given a voxel index, we see if the index is bounded by the image dimensions.
+
+### *(define)* CopyVoxelSize
+Given two image, we copy the sizes of each voxel in image 1 to image 2.
+
 ### *(function)* applyNormalizationValue
 This one is to apply the normalization in a value. So, we are clipping the value.
 
@@ -114,7 +123,29 @@ Used to copy the Cb and Cr components of a image into another.
 Used to create an standard color image where the Cb and Cr components will have a standard value aswell.
 
 ### *(function)* CreateImageFromImage
+Create a image with nothing in it, but with the same specs as another one.
 
+### *(function)* CreateImage
+This function first alloc memory for the voxels values, and calls another applyCreateImageFromBuffer. 
+
+### *(function)* applyCreateImageFromBuffer
+Given the memory for the pixels, this function allocs memory and values for the struct image.
+
+### *(function)* ReadPngImageAux
+This function uses the libpng strategy of reading png's images. The main goal of this image, is to read and have the row_pointers (pointers for each row of pixels in the image) 
+
+### *(function)* ReadImage
+ReadImage is one of the most important function in this library. First we get the row_pointers out of the ReadPngImageAux, then we get some infos about the image, such as height, color_type an depth, which is then used to create the image. Then, we have the major block code in the function:  
+* If the image is gray_level: For each x and y, we get the pixel value using row_pointers (see that we have to add the number of channels and byteshift in here); then we alloc in the 1D array the value of this pixel (inside the val int* of the struct image). Note that if the depth is 16, then we have 16 bits for pixel, so we have to add the first 8 bit part and the second one.
+* If the image is gray_level with alpha channel: In here, the only difference is that we have to alloc the values of the channel alpha aswell.
+* If the image is RGB: In here, we first get the RGB componentes of each pixel inside the image, and then we convert this to YCbCr, which is then allocated inside the val, Cb and Cr arrays of the image.
+* If the image is RGB with alpha channel: Reading RGB pixels with the alpha channel.  To end it all, we free the memory allocated in the row_pointers, and we destroy the png struct of libpng.  
+
+### *(function)* 
+
+### *(function)* 
+
+### *(function)* 
 
 ### *(function)* 
 
