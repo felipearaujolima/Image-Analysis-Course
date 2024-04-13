@@ -59,14 +59,15 @@ This function helps the convertion of a image with color space RGB to YCbCr, rem
     - Y stands for 'luma' which is the brightness in an image.
     - Cb stands for 'blue-difference choroma' component.
     - Cr stands for 'red difference choroma' component.
-T
+The YCbCr color model is derived from the RGB model and is widely used in digital imaging systems, digital video, and JPEG and MPEG compression schemes. The main advantange of YCbCr is that it separates the brightness (luminance) information (Y) from the color (chorominance) information (Cb and Cr), which allows for efficent compression. It's also designed to be compatible with black and white television and to provide consistent color representation across different devices.
+Given all that, we always convert from RGB to YCbCr the images that we are working on. Even if the image is gray-level we can also to this convertion, with the Cb and Cr values being NULL.
+It's important to say that if the image is a 8-bit image, normalization_value would be 255, and all output values would be in the range [0, 255].
 
 ### *(function)* applyRGBtoYCbCrBT2020
+This function also convert RGB to YCbCr, however, this one is a more advanced and flexible version of the RGB to YCbCr convertion. It takes into account the bit depth of the input RGB values and the desired output YCbCr values. The bit depth is the number of bits used to represent each color component. Higher bits depths allows for more precise color representation. 
 
 ### *(function)* applyYCbCrBT2020toRGB
-
-
-
+This one is to apply a convertion in a image, to go from YCbCr to RGB.  
 
 # Image
 
