@@ -71,6 +71,61 @@ This one is to apply a convertion in a image, to go from YCbCr to RGB.
 
 # Image
 
+### *(struct)* Image
+This structure is the key to all of what we are doing, it's where the image is gonna be allocated.  
+* val -> is a array of values from 0 to n, having the luminance of the image (the image in here is a flat 1D array).
+* Cb -> is a array of values from 0 to n, having the blue-difference choroma component of the image.
+* Cr -> the same as the above, but for the red-difference choroma.
+* Alpha -> the same as the above, but for the alpha component (opacity).
+* Xsize -> the xsize of the image (here, we are treating the image as a 2D or 3D concept).
+* Ysize -> the same as the above, for y.
+* Zsize -> the same as the above, for z.
+* dx, dy, dz -> the size of each voxel along the x, y and z dimensions.
+* tby, tbz -> This two are used to speed up voxel access by storing pre-calculated values for the y and z parts of the 3D to 1D index conversion formula.
+
+### *(function)* applyNormalizationValue
+This one is to apply the normalization in a value. So, we are clipping the value.
+
+### *(function)* applyMinMaxValues
+This one is to find the min and max values (luminance) of a image. 
+
+### *(function)* applyImageDepth
+This one is used to find the bit depth of a image. We first find the range of values in the image (255 if 8-bit), than we clip that to be inside certain known bits range (255, 4095..), and then we find the bit depth by applying the log. 
+
+### *(function)* applyIsColorImage
+This is a aux function to find out if the image is color.
+
+### *(function)* applySetCbCr
+Allocing a value into the Cb and Cr components.
+
+### *(function)* applySetAlpha
+Allocing a value into the alpha component.
+
+### *(function)* MaxImageRange
+This is the same as 2^bitdepth, to find the max image range.
+
+### *(function)* applyGetVoxelCoord
+Used to convert a 1D index into 3D coordinates in a voxel grid.
+
+### *(function)* CopyCbCr
+Used to copy the Cb and Cr components of a image into another.
+
+### *(function)* CreateColorImage
+Used to create an standard color image where the Cb and Cr components will have a standard value aswell.
+
+### *(function)* CreateImageFromImage
+
+
+### *(function)* 
+
+### *(function)* 
+
+### *(function)* 
+
+### *(function)* 
+
+
+
 # Adjacency
 
 # MathMorph
