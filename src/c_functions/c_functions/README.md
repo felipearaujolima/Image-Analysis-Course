@@ -53,6 +53,13 @@ Using applyAlloc in a way that my n elements has size float
 Using applyAlloc in a way that my n elements has size ushort
 
 ### *(function)* applyRGBtoYCbCr
+This function helps the convertion of a image with color space RGB to YCbCr, remember that:  
+* RGB: This is an additive color model in which the red, green and blue primary colors of light are added together in various ways to reproduce a broad array of colors. Each pixel in a image is represented as a combination of these three colors.  
+* YCbCr: This is a family of color space used as a part of the image pipeline in video and digital photography systems. YCbCr is sometimes described as a "decorreleted" version of the RGB color space, since the three components have less redundancy and are more amenable to efficient coding.
+    - Y stands for 'luma' which is the brightness in an image.
+    - Cb stands for 'blue-difference choroma' component.
+    - Cr stands for 'red difference choroma' component.
+T
 
 ### *(function)* applyRGBtoYCbCrBT2020
 
