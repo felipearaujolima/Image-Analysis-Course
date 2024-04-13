@@ -16,10 +16,20 @@ In this file you will find every function that i used to test the theory behind 
 # Common
 These funcions are common to all library, mainly used as a aux for the others, or to myself. 
 
-### applylog
+### (struct) Voxel
+Voxel is short for volume pixel, is a unit of graphic information that defines a point in three-dimensional space. Given that, i need x (height), y (widht) and z (depth) - i also have t as time, but i don't use that. So this structure is mainly because of that, a way to store the coordinates of a volume pixel. 
+
+### (struct) IntArray
+This one is for the background. It's only a structure that has the array (int*) and n. 
+
+### (struct) Color 
+Color can be see as RGB plus a alpha channel. What this means is: We have three luminosity channels (Red, Green, Blue) with color intensity given by 0 to 255. With that, we may also have a alpha channel which give us the opacity the pixel. See, every struct Voxel will have a struct color attachted to it. 
+
+### (function) applylog
 This one is pretty straightforward, is a mathamatical way of doing a log of a number, given certain base, using natural log. This one will come in hand when we work with bit depth.
 
-### CreateIntArray
+### (function) CreateIntArray
+
 
 # Image
 
