@@ -1,7 +1,5 @@
 <h1 align="center"> Image Analysis Course </h1>  
 
-<hr>
-
 <p >
    <img src="https://img.shields.io/badge/Status-Doing-blue" #vitrinedev/>
    <img src="https://img.shields.io/github/last-commit/felipearaujolima/Image-Analysis-Course" #vitrinedev/>
