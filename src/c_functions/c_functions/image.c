@@ -31,7 +31,6 @@ void applyMinMaxValues(Image* img, int* min, int* max) {
             *max = img->val[p];
     }
 }
-
 uchar applyImageDepth(Image* img) {
     int img_min, img_max;
     applyMinMaxValues(img, &img_min, &img_max);
@@ -73,12 +72,26 @@ void applySetAlpha(Image* img, ushort value)
         img->alpha[p] = value;
     }
 }
+int applyMaximumValue(Image* img) {
+
+
+    int img_max_val = IFT_INFINITY_INT_NEG;
+
+    for (int p = 0; p < img->n; p++)
+        if (img_max_val < img->val[p])
+            img_max_val = img->val[p];
+
+    return img_max_val;
+}
+void SetImage(Image* img, int value) {
+    for (int p = 0; p < img->n; p++)
+        img->val[p] = value;
+}
 
 /* For image working */
 long MaxImageRange(uchar img_depth) {
     return (1L << (img_depth)) - 1; // 2^img_depth -1
 }
-
 Voxel applyGetVoxelCoord(Image* img, int p)
 {
 
@@ -92,7 +105,6 @@ Voxel applyGetVoxelCoord(Image* img, int p)
 
     return u;
 }
-
 void CopyCbCr(Image* src, Image* dst) {
     if (applyIsColorImage(src)) {
 
@@ -107,7 +119,6 @@ void CopyCbCr(Image* src, Image* dst) {
         }
     }
 }
-
 Image* CreateColorImage(int xsize, int ysize, int zsize, int depth)
 {
     Image* img = NULL;
@@ -117,7 +128,6 @@ Image* CreateColorImage(int xsize, int ysize, int zsize, int depth)
 
     return(img);
 }
-
 Image* CreateImageFromImage(Image* src) {
     Image* out = NULL;
 
@@ -132,6 +142,57 @@ Image* CreateImageFromImage(Image* src) {
     }
 
     return out;
+}
+Image* CopyImage(Image* img) {
+    if (img == NULL)
+        return NULL;
+
+    Image* imgc = CreateImage(img->xsize, img->ysize, img->zsize);
+    CopyImageInplace(img, imgc);
+
+    return(imgc);
+}
+void CopyImageInplace(Image* src, Image* dest) {
+    int p;
+
+    CopyVoxelSize(src, dest);
+
+    for (p = 0; p < src->n; p++)
+        dest->val[p] = src->val[p];
+
+    if (src->Cb != NULL) {
+        if (dest->Cb == NULL)
+            dest->Cb = applyAllocUShortArray(src->n);
+        if (dest->Cr == NULL)
+            dest->Cr = applyAllocUShortArray(src->n);
+        for (p = 0; p < src->n; p++) {
+            dest->Cb[p] = src->Cb[p];
+            dest->Cr[p] = src->Cr[p];
+        }
+    }
+}
+Image* Abs(Image* img)
+{
+    Image* aimg = NULL;
+    int p;
+
+    if (applyIsColorImage(img)) {
+        aimg = CreateColorImage(img->xsize, img->ysize, img->zsize, applyImageDepth(img));
+        for (p = 0; p < img->n; p++) {
+            aimg->val[p] = abs(img->val[p]);
+            aimg->Cb[p] = img->Cb[p];
+            aimg->Cr[p] = img->Cr[p];
+        }
+    }
+    else {
+        aimg = CreateImage(img->xsize, img->ysize, img->zsize);
+        for (p = 0; p < img->n; p++) {
+            aimg->val[p] = abs(img->val[p]);
+        }
+    }
+    CopyVoxelSize(img, aimg);
+
+    return(aimg);
 }
 
 /* Create/Read image functions */

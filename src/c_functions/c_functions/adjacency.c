@@ -12,6 +12,19 @@ Voxel applyGetAdjacentVoxel(AdjRel* A, Voxel u, int adj)
     return(v);
 }
 
+AdjRel* CopyAdjacency(AdjRel* A) {
+    AdjRel* B = CreateAdjRel(A->n);
+    int i;
+    for (i = 0; i < A->n; i++) {
+        B->dx[i] = A->dx[i];
+        B->dy[i] = A->dy[i];
+        B->dz[i] = A->dz[i];
+        B->dt[i] = A->dt[i];
+    }
+
+    return(B);
+}
+
 AdjRel* CreateAdjRel(int n) /*! \brief Allocates memory for a
 					  3D adjacency relation */
 {

@@ -2,6 +2,21 @@
 
 
 /* Miscellaneous */
+void RandomSeed(unsigned int seed)
+{
+
+    srand(seed);
+
+}
+int RandomInteger(int low, int high) {
+    int k;
+    double d;
+
+    d = (double)rand() / ((double)RAND_MAX + 0.5);
+    k = Min((int)(d * (high - low + 1.0)) + low, high);
+
+    return k;
+}
 double applyLog(double val, double base) {
     return (log(val) / log(base));
 }
@@ -34,7 +49,34 @@ void DestroyIntArray(IntArray **iarr) {
         *iarr = NULL;
     }
 }
+ColorTable* CreateRandomColorTable(int n_colors) {
 
+    ColorTable* ctb = (ColorTable*)applyAlloc(1, sizeof(ColorTable));
+    ctb->ncolors = n_colors;
+    ctb->color = (Color*)applyAlloc(n_colors, sizeof(Color));
+
+    RandomSeed(time(NULL));
+
+    for (int c = 0; c < n_colors; c++) {
+        ctb->color[c].val[0] = RandomInteger(0, 255);
+        ctb->color[c].val[1] = RandomInteger(0, 255);
+        ctb->color[c].val[2] = RandomInteger(0, 255);
+        ctb->color[c] = applyRGBtoYCbCr(ctb->color[c], 255);
+    }
+
+    return ctb;
+}
+void DestroyColorTable(ColorTable** ctb)
+{
+    ColorTable* aux = *ctb;
+
+    if (aux != NULL) {
+        applyFree(aux->color);
+        applyFree(aux);
+        *ctb = NULL;
+    }
+
+}
 /* Memory functions */
 void applyFree(void* data) {
     //so you can just call free for NULL pointer, and be happy :)

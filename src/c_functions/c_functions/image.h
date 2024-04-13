@@ -45,6 +45,8 @@ uchar applyImageDepth(Image* img);
 bool applyIsColorImage(Image* img);
 void  applySetCbCr(Image* img, ushort value);
 void  applySetAlpha(Image* img, ushort value);
+int applyMaximumValue(Image* img);
+void SetImage(Image* img, int value);
 
 /* For image working */
 long MaxImageRange(uchar img_depth);
@@ -52,7 +54,9 @@ Voxel applyGetVoxelCoord(Image* img, int p);
 void CopyCbCr(Image* src, Image* dst);
 Image* CreateColorImage(int xsize, int ysize, int zsize, int depth);
 Image* CreateImageFromImage(Image* src);
-
+Image* CopyImage(Image* img);
+void CopyImageInplace(Image* src, Image* dest);
+Image* Abs(Image* img);
 /* Create/Read image functions */
 Image* CreateImage(int xsize, int ysize, int zsize);
 Image* applyCreateImageFromBuffer(int xsize, int ysize, int zsize, int* val);

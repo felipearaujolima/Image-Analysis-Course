@@ -19,6 +19,7 @@ typedef struct fastadjrel {
 
 /* For stuff */
 Voxel applyGetAdjacentVoxel(AdjRel* A, Voxel u, int adj);
+AdjRel* CopyAdjacency(AdjRel* A);
 
 /* For creating and destroing adj */
 AdjRel* CreateAdjRel(int n);
