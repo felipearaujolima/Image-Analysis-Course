@@ -3,7 +3,7 @@
 <hr>
 
 <p >
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge" #vitrinedev/>
+   <img src="https://img.shields.io/badge/status-em%20andamento-blue" #vitrinedev/>
    <img src="https://img.shields.io/github/last-commit/felipearaujolima/Image-Analysis-Course" #vitrinedev/>
 </p>
 
