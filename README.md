@@ -19,6 +19,6 @@ Everything that is presented here was taught to me by professor Alexandre Falcao
 
 - `images/`: It's where the input images used in tests are kept.
 - `src/`: The main file of this repository.
-  - `c_functions/`: It's where the C functions and explanations of it is kept.
+  - `c_functions/c_functions/`: It's where the C functions and explanations of it is kept.
   - `theory/`: Here you will find the theory behind image analysis and the results of doing so in the input images.
 
