@@ -141,21 +141,16 @@ ReadImage is one of the most important function in this library. First we get th
 * If the image is RGB: In here, we first get the RGB componentes of each pixel inside the image, and then we convert this to YCbCr, which is then allocated inside the val, Cb and Cr arrays of the image.
 * If the image is RGB with alpha channel: Reading RGB pixels with the alpha channel.  To end it all, we free the memory allocated in the row_pointers, and we destroy the png struct of libpng.  
 
-### *(function)* 
+### *(function)* DestroyImage
+This is a fun one... freeing the memory of each component of the image, and the pointer of the image at the end.  
 
-### *(function)* 
+### *(function)* WritePngImageAux
+In here, we first create the libpng structs necessary to write a png image. then we use all the info about the image, with the row_pointers, to write a png image. 
 
-### *(function)* 
-
-### *(function)* 
-
-### *(function)* 
-
-### *(function)* 
-
-### *(function)* 
-
-
+### *(function)* WriteImagePNG
+The main goal of this function is to find the row_pointers of the image again, given the struct image. First we find the numbers of channels in the image, and then we alloc memomry and info in each row_pointer.  
+* If the image is gray-level: We do the inverse of what we did to read the row_pointers into img -> val.
+If the image is not gray-level, we do the inverse of each possibility, given the type of image, based on ReadImage. 
 
 # Adjacency
 
