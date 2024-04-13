@@ -3,9 +3,9 @@
 <hr>
 
 <p >
-   <img src="https://img.shields.io/badge/status-on%20going-blue" #vitrinedev/>
-   <img src="https://img.shields.io/github/last-commit/felipearaujolima/Image-Analysis-Course" #vitrinedev/>
-   <img src="https://img.shields.io/badge/author-Felipe%20Araujo-green" #vitrinedev/>
+   <img src="https://img.shields.io/badge/Status-On%20going-blue" #vitrinedev/>
+   <img src="https://img.shields.io/github/Last-commit/felipearaujolima/Image-Analysis-Course" #vitrinedev/>
+   <img src="https://img.shields.io/badge/Author-Felipe%20Araujo-green" #vitrinedev/>
    
 </p>
 
