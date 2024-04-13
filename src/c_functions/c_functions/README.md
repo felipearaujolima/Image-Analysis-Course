@@ -70,6 +70,7 @@ This function also convert RGB to YCbCr, however, this one is a more advanced an
 This one is to apply a convertion in a image, to go from YCbCr to RGB.  
 
 # Image
+These functions are for working with image, and by that i mean: Reading, Writing, Copying and Destroing a image. In here you will also find the structure of a image, and some global aux functions.
 
 ### *(struct)* Image
 This structure is the key to all of what we are doing, it's where the image is gonna be allocated.  
@@ -132,7 +133,7 @@ This function first alloc memory for the voxels values, and calls another applyC
 Given the memory for the pixels, this function allocs memory and values for the struct image.
 
 ### *(function)* ReadPngImageAux
-This function uses the libpng strategy of reading png's images. The main goal of this image, is to read and have the row_pointers (pointers for each row of pixels in the image) 
+This function uses the libpng strategy of reading png's images. The main goal of this function, is to read and have the row_pointers (pointers for each row of pixels in the image), for the input image.
 
 ### *(function)* ReadImage
 ReadImage is one of the most important function in this library. First we get the row_pointers out of the ReadPngImageAux, then we get some infos about the image, such as height, color_type an depth, which is then used to create the image. Then, we have the major block code in the function:  
@@ -153,6 +154,25 @@ The main goal of this function is to find the row_pointers of the image again, g
 If the image is not gray-level, we do the inverse of each possibility, given the type of image, based on ReadImage. 
 
 # Adjacency
+In here, you find the functions necessary to work with adjacency in images. Not only a function to create a adjacency, but a rectangular and circular one. This block of functions is extremely important given the many uses that adjacency has on many image analysis's applications.
+
+### *(struct)* AdjRel 
+This is the major structure when working with adjacency. Here we have arrays of displacement for each dimension (x, y, z, t), and the number of adjacency voxels. The way we are working with adjacency, is by first creating the displacements, in a way that e.g. we have a rectangular adjacency with h = w = 3, then we will need to go from x = y = z = t = 0 (the center of the adjacency) to x = -2, x = -1, x = 1, x = 2 (the same for the others dimensions). So, we only alloc the displacements for the adjacency, and use that for every pixel, in a way that i can easily find his adjacents pixels.  
+
+### *(function)* applyGetAdjacentVoxel
+Given a voxel, a adjacency and the index of the adjacency (such as: If we have a rectangular adjacency of w = h = 3, then we have {0, 1, 2... 8} possibles adjacents voxels index), we find the adjacency voxel.  
+
+### *(function)* CreateAdjRel
+Here we are only allocating memory for the adjacency and its arrays.
+
+### *(function)* DestroyAdjRel
+Destroing the adjacency.
+
+### *(function)* adjRectangular
+Creating a rectangular adjacency. First finding n and then allocating the displacements given this shape. 
+
+### *(function)* adjCircular
+Creating a circular adjacency. First finding n and then allocating the displacements given this shape. 
 
 # MathMorph
 
