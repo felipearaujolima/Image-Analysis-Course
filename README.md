@@ -13,7 +13,7 @@
 ### Description 
 
 The main goal of this repo is to create a easy way to understand the core concepts of image analysis. Here, you will find the theory behind it all plus the hands on of it. Keep in mind that will be errors and some small mistakes here and there, however, i will do my best to keep then as minimal as possible.   
-Everything that is presented here was taught to me by professor Alexandre Falcao, in Unicamp - Brazil. The link to his homepage will be on the end of this readme.  
+Everything that is presented here was taught to me by professor Alexandre Falcao, at Unicamp - Brazil. The link to his homepage will be on the end of this readme.  
 
 ### Structure 
 
