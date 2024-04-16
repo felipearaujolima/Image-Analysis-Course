@@ -88,6 +88,53 @@ void SetImage(Image* img, int value) {
         img->val[p] = value;
 }
 
+Image* BorderImage(Image* label, bool get_margins)
+{
+    AdjRel* A;
+    Image* border = CreateImage(label->xsize, label->ysize, label->zsize);
+    int        p, q, i;
+    Voxel   u, v;
+
+    A = adjCircular(1.0);
+
+    if (get_margins) {
+        for (p = 0; p < label->n; p++) {
+            u = applyGetVoxelCoord(label, p);
+            for (i = 1; i < A->n; i++) {
+                v = applyGetAdjacentVoxel(A, u, i);
+                if (isValidVoxel(label, v)) {
+                    q = applyGetVoxelIndex(label, v);
+                    if (label->val[p] != label->val[q]) {
+                        border->val[p] = label->val[p];
+                        break;
+                    }
+                }
+                else {
+                    border->val[p] = label->val[p];
+                }
+            }
+        }
+    }
+    else {
+        for (p = 0; p < label->n; p++) {
+            u = applyGetVoxelCoord(label, p);
+            for (i = 1; i < A->n; i++) {
+                v = applyGetAdjacentVoxel(A, u, i);
+                if (isValidVoxel(label, v)) {
+                    q = applyGetVoxelIndex(label, v);
+                    if (label->val[p] != label->val[q]) {
+                        border->val[p] = label->val[p];
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    DestroyAdjRel(&A);
+    return(border);
+}
+
 /* For image working */
 long MaxImageRange(uchar img_depth) {
     return (1L << (img_depth)) - 1; // 2^img_depth -1

@@ -8,6 +8,7 @@
 #include <stdbool.h>
 #include <math.h>
 
+#define IFT_INFINITY_INT       INT_MAX
 #define IFT_INFINITY_INT_NEG   INT_MIN
 #define IFT_RANDOM_SEED (unsigned int) 42
 #define IFT_MAXWEIGHT     4095.0
@@ -22,6 +23,8 @@
 
 #define Round(x) ((x < 0)?(int)(x-0.5):(int)(x+0.5))
 #define Min(x,y) (((x) < (y))?(x):(y))
+#define Max(x,y) (((x) > (y))?(x):(y))
+#define PowerOfTwo(x) ((x) * (x))
 
 typedef unsigned short ushort;
 typedef unsigned char  uchar;
@@ -58,13 +61,14 @@ IntArray* IntRange(int begin, int end, int inc);
 void DestroyIntArray(IntArray** iarr);
 ColorTable* CreateRandomColorTable(int n_colors);
 void DestroyColorTable(ColorTable** ctb);
+int SafeMod(int a, int n);
 /* Memory functions */
 void applyFree(void* data);
 void* applyAlloc(size_t n, size_t size);
 int* applyAllocIntArray(long n);
 float* applyAllocFloatArray(long n);
 ushort* applyAllocUShortArray(long n);
-
+char* applyAllocCharArray(long n);
 /* Color functions */
 Color applyRGBtoYCbCrBT2020(Color cin, int rgbBitDepth, int yCbCrBitDepth);
 Color applyRGBtoYCbCr(Color cin, int normalization_value);

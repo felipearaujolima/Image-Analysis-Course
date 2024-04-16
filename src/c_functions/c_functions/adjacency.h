@@ -20,7 +20,7 @@ typedef struct fastadjrel {
 /* For stuff */
 Voxel applyGetAdjacentVoxel(AdjRel* A, Voxel u, int adj);
 AdjRel* CopyAdjacency(AdjRel* A);
-
+void applyMaxAdjShifts(AdjRel* A, int* dx, int* dy, int* dz);
 /* For creating and destroing adj */
 AdjRel* CreateAdjRel(int n);
 void DestroyAdjRel(AdjRel** A);

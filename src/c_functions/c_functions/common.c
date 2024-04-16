@@ -77,6 +77,13 @@ void DestroyColorTable(ColorTable** ctb)
     }
 
 }
+
+int SafeMod(int a, int n)
+{
+    int r = a % n;
+
+    return (r >= 0) ? r : n + r;
+}
 /* Memory functions */
 void applyFree(void* data) {
     //so you can just call free for NULL pointer, and be happy :)
@@ -103,7 +110,12 @@ ushort* applyAllocUShortArray(long n) {
     v = (ushort*)applyAlloc(n, sizeof(ushort));
     return(v);
 }
+char* applyAllocCharArray(long n) {
+    char* v = NULL;
 
+    v = (char*)applyAlloc(n, sizeof(char));
+    return (v);
+}
 /* Color functions */
 Color applyRGBtoYCbCr(Color cin, int normalization_value)
 {

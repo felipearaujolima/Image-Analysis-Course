@@ -25,7 +25,9 @@
     <ClCompile Include="kernel.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="morph.c" />
+    <ClCompile Include="queue.c" />
     <ClCompile Include="seed.c" />
+    <ClCompile Include="segmentation.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="adjacency.h" />
@@ -33,7 +35,9 @@
     <ClInclude Include="image.h" />
     <ClInclude Include="kernel.h" />
     <ClInclude Include="morph.h" />
+    <ClInclude Include="queue.h" />
     <ClInclude Include="seed.h" />
+    <ClInclude Include="segmentation.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

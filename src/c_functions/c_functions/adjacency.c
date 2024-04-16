@@ -12,6 +12,24 @@ Voxel applyGetAdjacentVoxel(AdjRel* A, Voxel u, int adj)
     return(v);
 }
 
+
+void applyMaxAdjShifts(AdjRel* A, int* dx, int* dy, int* dz)
+{
+    int i, d[3];
+
+    *dx = *dy = *dz = 0.0;
+
+    for (i = 0; i < A->n; i++) {
+        d[0] = abs(A->dx[i]);
+        d[1] = abs(A->dy[i]);
+        d[2] = abs(A->dz[i]);
+        if (*dx < d[0]) *dx = d[0];
+        if (*dy < d[1]) *dy = d[1];
+        if (*dz < d[2]) *dz = d[2];
+    }
+
+}
+
 AdjRel* CopyAdjacency(AdjRel* A) {
     AdjRel* B = CreateAdjRel(A->n);
     int i;

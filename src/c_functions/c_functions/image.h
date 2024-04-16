@@ -3,6 +3,9 @@
 
 
 #include "common.h"
+#include "adjacency.h"
+
+
 #define applyGetVoxelIndex(s, v) ((v.x)+(s)->tby[(v.y)]+(s)->tbz[(v.z)])
 #define isValidVoxel(img, v)((v.x >= 0) && (v.x <= ((img)->xsize - 1)) && (v.y >= 0) && (v.y <= ((img)->ysize - 1)) && (v.z >= 0) && (v.z <= ((img)->zsize - 1)))
 #define CopyVoxelSize(src, dst) (dst)->dx = (src)->dx; (dst)->dy = (src)->dy; (dst)->dz = (src)->dz;
@@ -47,6 +50,7 @@ void  applySetCbCr(Image* img, ushort value);
 void  applySetAlpha(Image* img, ushort value);
 int applyMaximumValue(Image* img);
 void SetImage(Image* img, int value);
+Image* BorderImage(Image* label, bool get_margins);
 
 /* For image working */
 long MaxImageRange(uchar img_depth);
