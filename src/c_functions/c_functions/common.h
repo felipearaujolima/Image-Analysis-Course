@@ -28,6 +28,7 @@
 
 typedef unsigned short ushort;
 typedef unsigned char  uchar;
+typedef unsigned long  ulong;
 
 typedef struct voxel {
     int x, y, z, t;

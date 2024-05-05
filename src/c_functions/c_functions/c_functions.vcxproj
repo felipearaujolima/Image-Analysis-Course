@@ -24,6 +24,9 @@
     <ClCompile Include="image.c" />
     <ClCompile Include="kernel.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="main_ground_truth.c" />
+    <ClCompile Include="main_optimize.c" />
+    <ClCompile Include="main_program.c" />
     <ClCompile Include="morph.c" />
     <ClCompile Include="queue.c" />
     <ClCompile Include="seed.c" />
